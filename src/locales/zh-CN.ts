@@ -192,10 +192,14 @@ export default {
     hasPermission: '请设置操作权限值'
   },
   analysis: {
-    newUser: '新增用户',
-    unreadInformation: '未读消息',
-    transactionAmount: '成交金额',
-    totalShopping: '购物总量',
+    newUser: '客户总数',
+    unreadInformation: '今日未处理的发票',
+    transactionAmount: '今日待送出的发票',
+    totalShopping: '今日成功交付',
+    failedDelivery: '今日送货失败',
+    importSpreadsheet: '上传您的电子表格',
+    importLimit: '请上传 Excel (XLSX) 或 CSV 格式的电子表格。允许上传的最大文件为 10 MB。',
+    importBtn: '现在上传',
     monthlySales: '每月销售额',
     userAccessSource: '用户访问来源',
     january: '一月',

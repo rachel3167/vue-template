@@ -196,10 +196,15 @@ export default {
     hasPermission: 'Please set the operation permission value'
   },
   analysis: {
-    newUser: 'New user',
-    unreadInformation: 'Unread information',
-    transactionAmount: 'Transaction amount',
-    totalShopping: 'Total Shopping',
+    newUser: 'Total number of Customer',
+    unreadInformation: "Today's number of pending invoices",
+    transactionAmount: "Today's invoices prepared for delivery",
+    totalShopping: "Today's successful delivery",
+    failedDelivery: "Today's failed delivery",
+    importSpreadsheet: 'Import your spreadsheet here',
+    importLimit:
+      'Please upload your spreadsheet in Excel (XLSX) or CSV format. The maximum file size allowed is 10 MB.',
+    importBtn: 'Import Now',
     monthlySales: 'Monthly sales',
     userAccessSource: 'User access source',
     january: 'January',

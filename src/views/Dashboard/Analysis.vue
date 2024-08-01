@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import PanelGroup from './components/PanelGroup.vue'
-import { ElRow, ElCol, ElCard, ElSkeleton } from 'element-plus'
-import { Echart } from '@/components/Echart'
 import { pieOptions, barOptions, lineOptions } from './echarts-data'
 import { ref, reactive } from 'vue'
 import {
@@ -101,7 +99,7 @@ getAllApi()
 
 <template>
   <PanelGroup />
-  <ElRow :gutter="20" justify="space-between">
+  <!-- <ElRow :gutter="20" justify="space-between">
     <ElCol :xl="10" :lg="10" :md="24" :sm="24" :xs="24">
       <ElCard shadow="hover" class="mb-20px">
         <ElSkeleton :loading="loading" animated>
@@ -123,5 +121,5 @@ getAllApi()
         </ElSkeleton>
       </ElCard>
     </ElCol>
-  </ElRow>
+  </ElRow> -->
 </template>
