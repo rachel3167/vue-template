@@ -20,7 +20,7 @@ import { setupElementPlus } from '@/plugins/elementPlus'
 
 // 引入全局样式
 import '@/styles/index.less'
-
+import '@/styles/style.css'
 // 引入动画
 import '@/plugins/animate.css'
 
