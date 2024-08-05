@@ -294,6 +294,7 @@ getCount()
 .custom-el-button {
   width: 90%;
   padding: 30px;
+  font-family: Nunito, sans-serif;
   font-size: 30px;
   border-radius: 12px;
 }
