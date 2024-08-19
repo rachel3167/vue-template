@@ -100,16 +100,16 @@ export const asyncRouterMap: AppRouteRecordRaw[] = [
           noCache: true,
           affix: true
         }
-      },
-      {
-        path: 'workplace',
-        component: () => import('@/views/Dashboard/Workplace.vue'),
-        name: 'Workplace',
-        meta: {
-          title: t('router.workplace'),
-          noCache: true
-        }
       }
+      // {
+      //   path: 'workplace',
+      //   component: () => import('@/views/Dashboard/Workplace.vue'),
+      //   name: 'Workplace',
+      //   meta: {
+      //     title: t('router.workplace'),
+      //     noCache: true
+      //   }
+      // }
     ]
   },
   {
@@ -724,6 +724,23 @@ export const asyncRouterMap: AppRouteRecordRaw[] = [
         name: 'Role',
         meta: {
           title: t('router.role')
+        }
+      }
+    ]
+  },
+  {
+    path: '/cashaccount',
+    component: Layout,
+    name: 'Cash Account',
+    meta: {},
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/CashAccount/CashAccount.vue'),
+        name: 'CashAccount',
+        meta: {
+          title: t('router.cashaccount'),
+          icon: 'vi-cib:cashapp'
         }
       }
     ]

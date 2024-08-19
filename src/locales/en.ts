@@ -137,6 +137,7 @@ export default {
     analysis: 'Analysis',
     workplace: 'Workplace',
     guide: 'Truck',
+    cashaccount: 'Cash Account',
     component: 'Invoice',
     icon: 'Icon',
     echart: 'Echart',

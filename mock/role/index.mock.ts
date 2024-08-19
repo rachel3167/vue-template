@@ -25,17 +25,17 @@ const adminList = [
           noCache: true,
           affix: true
         }
-      },
-      {
-        path: 'workplace',
-        component: 'views/Dashboard/Workplace',
-        name: 'Workplace',
-        meta: {
-          title: 'router.workplace',
-          noCache: true,
-          affix: true
-        }
       }
+      // {
+      //   path: 'workplace',
+      //   component: 'views/Dashboard/Workplace',
+      //   name: 'Workplace',
+      //   meta: {
+      //     title: 'router.workplace',
+      //     noCache: true,
+      //     affix: true
+      //   }
+      // }
     ]
   },
   {
@@ -668,6 +668,23 @@ const adminList = [
         }
       }
     ]
+  },
+  {
+    path: '/cashaccount',
+    component: '#',
+    name: 'CashAccount',
+    meta: {},
+    children: [
+      {
+        path: 'index',
+        component: 'views/CashAccount/CashAccount',
+        name: 'CashAccount',
+        meta: {
+          title: 'router.cashaccount',
+          icon: 'vi-cib:cashapp'
+        }
+      }
+    ]
   }
 ]
 
@@ -679,6 +696,8 @@ const testList: string[] = [
   'https://element-plus-admin-doc.cn/',
   '/guide',
   '/guide/index',
+  '/cashaccount',
+  '/cashaccount/index',
   '/components',
   '/components/form',
   '/components/form/default-form',
@@ -776,18 +795,18 @@ const menus = [
             title: '分析页',
             noCache: true
           }
-        },
-        {
-          path: 'workplace',
-          component: 'views/Dashboard/Workplace',
-          name: 'Workplace',
-          status: Mock.Random.integer(0, 1),
-          id: 3,
-          meta: {
-            title: '工作台',
-            noCache: true
-          }
         }
+        // {
+        //   path: 'workplace',
+        //   component: 'views/Dashboard/Workplace',
+        //   name: 'Workplace',
+        //   status: Mock.Random.integer(0, 1),
+        //   id: 3,
+        //   meta: {
+        //     title: '工作台',
+        //     noCache: true
+        //   }
+        // }
       ]
     },
     {
@@ -1004,18 +1023,18 @@ const menus = [
             title: '分析页',
             noCache: true
           }
-        },
-        {
-          path: 'workplace',
-          component: 'views/Dashboard/Workplace',
-          name: 'Workplace',
-          status: Mock.Random.integer(0, 1),
-          id: 3,
-          meta: {
-            title: '工作台',
-            noCache: true
-          }
         }
+        // {
+        //   path: 'workplace',
+        //   component: 'views/Dashboard/Workplace',
+        //   name: 'Workplace',
+        //   status: Mock.Random.integer(0, 1),
+        //   id: 3,
+        //   meta: {
+        //     title: '工作台',
+        //     noCache: true
+        //   }
+        // }
       ]
     }
   ],

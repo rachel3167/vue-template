@@ -33,7 +33,8 @@ export default [
                 {
                   path: 'analysis',
                   component: 'views/Dashboard/Analysis',
-                  name: 'Analysis',
+                  // name: 'Analysis',
+                  name: 'Dashboard',
                   status: Mock.Random.integer(0, 1),
                   id: 2,
                   type: 1,
@@ -56,38 +57,38 @@ export default [
                     noCache: true,
                     permission: ['add', 'edit']
                   }
-                },
-                {
-                  path: 'workplace',
-                  component: 'views/Dashboard/Workplace',
-                  name: 'Workplace',
-                  status: Mock.Random.integer(0, 1),
-                  id: 3,
-                  type: 1,
-                  parentId: 1,
-                  title: '工作台',
-                  permissionList: [
-                    {
-                      id: 1,
-                      label: '新增',
-                      value: 'add'
-                    },
-                    {
-                      id: 2,
-                      label: '编辑',
-                      value: 'edit'
-                    },
-                    {
-                      id: 3,
-                      label: '删除',
-                      value: 'delete'
-                    }
-                  ],
-                  meta: {
-                    title: '工作台',
-                    noCache: true
-                  }
                 }
+                // {
+                //   path: 'workplace',
+                //   component: 'views/Dashboard/Workplace',
+                //   name: 'Workplace',
+                //   status: Mock.Random.integer(0, 1),
+                //   id: 3,
+                //   type: 1,
+                //   parentId: 1,
+                //   title: '工作台',
+                //   permissionList: [
+                //     {
+                //       id: 1,
+                //       label: '新增',
+                //       value: 'add'
+                //     },
+                //     {
+                //       id: 2,
+                //       label: '编辑',
+                //       value: 'edit'
+                //     },
+                //     {
+                //       id: 3,
+                //       label: '删除',
+                //       value: 'delete'
+                //     }
+                //   ],
+                //   meta: {
+                //     title: '工作台',
+                //     noCache: true
+                //   }
+                // }
               ]
             },
             {
