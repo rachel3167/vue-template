@@ -135,6 +135,7 @@ export default {
     analysis: '分析页',
     workplace: '工作台',
     guide: '引导',
+    customerdata: '顾客资料',
     cashaccount: '现金',
     component: '组件',
     icon: '图标',

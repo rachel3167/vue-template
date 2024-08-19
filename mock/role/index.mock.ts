@@ -98,15 +98,15 @@ const adminList = [
             meta: {
               title: 'router.defaultForm'
             }
-          },
-          {
-            path: 'use-form',
-            component: 'views/Components/Form/UseFormDemo',
-            name: 'UseForm',
-            meta: {
-              title: 'UseForm'
-            }
           }
+          // {
+          //   path: 'use-form',
+          //   component: 'views/Components/Form/UseFormDemo',
+          //   name: 'UseForm',
+          //   meta: {
+          //     title: 'UseForm'
+          //   }
+          // }
         ]
       },
       {
@@ -236,119 +236,119 @@ const adminList = [
         meta: {
           title: 'router.imageViewer'
         }
-      },
-      {
-        path: 'dialog',
-        component: 'views/Components/Dialog',
-        name: 'Dialog',
-        meta: {
-          title: 'router.dialog'
-        }
-      },
-      {
-        path: 'icon',
-        component: 'views/Components/Icon',
-        name: 'Icon',
-        meta: {
-          title: 'router.icon'
-        }
-      },
-      {
-        path: 'icon-picker',
-        component: 'views/Components/IconPicker',
-        name: 'IconPicker',
-        meta: {
-          title: 'router.iconPicker'
-        }
-      },
-      {
-        path: 'echart',
-        component: 'views/Components/Echart',
-        name: 'Echart',
-        meta: {
-          title: 'router.echart'
-        }
-      },
-      {
-        path: 'count-to',
-        component: 'views/Components/CountTo',
-        name: 'CountTo',
-        meta: {
-          title: 'router.countTo'
-        }
-      },
-      {
-        path: 'qrcode',
-        component: 'views/Components/Qrcode',
-        name: 'Qrcode',
-        meta: {
-          title: 'router.qrcode'
-        }
-      },
-      {
-        path: 'highlight',
-        component: 'views/Components/Highlight',
-        name: 'Highlight',
-        meta: {
-          title: 'router.highlight'
-        }
-      },
-      {
-        path: 'infotip',
-        component: 'views/Components/Infotip',
-        name: 'Infotip',
-        meta: {
-          title: 'router.infotip'
-        }
-      },
-      {
-        path: 'input-password',
-        component: 'views/Components/InputPassword',
-        name: 'InputPassword',
-        meta: {
-          title: 'router.inputPassword'
-        }
-      },
-      {
-        path: 'waterfall',
-        component: 'views/Components/Waterfall',
-        name: 'Waterfall',
-        meta: {
-          title: 'router.waterfall'
-        }
-      },
-      {
-        path: 'image-cropping',
-        component: 'views/Components/ImageCropping',
-        name: 'ImageCropping',
-        meta: {
-          title: 'router.imageCropping'
-        }
-      },
-      {
-        path: 'video-player',
-        component: 'views/Components/VideoPlayer',
-        name: 'VideoPlayer',
-        meta: {
-          title: 'router.videoPlayer'
-        }
-      },
-      {
-        path: 'avatars',
-        component: 'views/Components/Avatars',
-        name: 'Avatars',
-        meta: {
-          title: 'router.avatars'
-        }
-      },
-      {
-        path: 'i-agree',
-        component: 'views/Components/IAgree',
-        name: 'IAgree',
-        meta: {
-          title: 'router.iAgree'
-        }
       }
+      // {
+      //   path: 'dialog',
+      //   component: 'views/Components/Dialog',
+      //   name: 'Dialog',
+      //   meta: {
+      //     title: 'router.dialog'
+      //   }
+      // },
+      // {
+      //   path: 'icon',
+      //   component: 'views/Components/Icon',
+      //   name: 'Icon',
+      //   meta: {
+      //     title: 'router.icon'
+      //   }
+      // },
+      // {
+      //   path: 'icon-picker',
+      //   component: 'views/Components/IconPicker',
+      //   name: 'IconPicker',
+      //   meta: {
+      //     title: 'router.iconPicker'
+      //   }
+      // },
+      // {
+      //   path: 'echart',
+      //   component: 'views/Components/Echart',
+      //   name: 'Echart',
+      //   meta: {
+      //     title: 'router.echart'
+      //   }
+      // },
+      // {
+      //   path: 'count-to',
+      //   component: 'views/Components/CountTo',
+      //   name: 'CountTo',
+      //   meta: {
+      //     title: 'router.countTo'
+      //   }
+      // },
+      // {
+      //   path: 'qrcode',
+      //   component: 'views/Components/Qrcode',
+      //   name: 'Qrcode',
+      //   meta: {
+      //     title: 'router.qrcode'
+      //   }
+      // },
+      // {
+      //   path: 'highlight',
+      //   component: 'views/Components/Highlight',
+      //   name: 'Highlight',
+      //   meta: {
+      //     title: 'router.highlight'
+      //   }
+      // },
+      // {
+      //   path: 'infotip',
+      //   component: 'views/Components/Infotip',
+      //   name: 'Infotip',
+      //   meta: {
+      //     title: 'router.infotip'
+      //   }
+      // },
+      // {
+      //   path: 'input-password',
+      //   component: 'views/Components/InputPassword',
+      //   name: 'InputPassword',
+      //   meta: {
+      //     title: 'router.inputPassword'
+      //   }
+      // },
+      // {
+      //   path: 'waterfall',
+      //   component: 'views/Components/Waterfall',
+      //   name: 'Waterfall',
+      //   meta: {
+      //     title: 'router.waterfall'
+      //   }
+      // },
+      // {
+      //   path: 'image-cropping',
+      //   component: 'views/Components/ImageCropping',
+      //   name: 'ImageCropping',
+      //   meta: {
+      //     title: 'router.imageCropping'
+      //   }
+      // },
+      // {
+      //   path: 'video-player',
+      //   component: 'views/Components/VideoPlayer',
+      //   name: 'VideoPlayer',
+      //   meta: {
+      //     title: 'router.videoPlayer'
+      //   }
+      // },
+      // {
+      //   path: 'avatars',
+      //   component: 'views/Components/Avatars',
+      //   name: 'Avatars',
+      //   meta: {
+      //     title: 'router.avatars'
+      //   }
+      // },
+      // {
+      //   path: 'i-agree',
+      //   component: 'views/Components/IAgree',
+      //   name: 'IAgree',
+      //   meta: {
+      //     title: 'router.iAgree'
+      //   }
+      // }
     ]
   },
   {
@@ -665,6 +665,23 @@ const adminList = [
         name: 'Role',
         meta: {
           title: 'router.role'
+        }
+      }
+    ]
+  },
+  {
+    path: '/customerdata',
+    component: '#',
+    name: 'CustomerData',
+    meta: {},
+    children: [
+      {
+        path: 'index',
+        component: 'views/CustomerData/CustomerData',
+        name: 'CustomerData',
+        meta: {
+          title: 'router.customerdata',
+          icon: 'vi-cil:people'
         }
       }
     ]

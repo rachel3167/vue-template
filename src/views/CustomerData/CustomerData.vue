@@ -17,84 +17,44 @@ const columns: TableColumn[] = [
     label: 'No.'
   },
   {
-    field: 'display_time',
-    label: 'Date'
-  },
-  {
     field: 'title',
-    label: 'Sales Invoice'
+    label: 'Acc'
   },
   {
-    field: 'title',
-    label: 'Delivery Term'
-  },
-  {
-    field: 'pageviews',
-    label: 'Our DO No'
-  },
-  {
-    field: 'title',
-    label: 'Ref. No'
-  },
-  {
-    field: 'title',
-    label: 'Customer'
-  },
-  {
-    field: 'title',
+    field: 'author',
     label: 'Customer Name'
   },
   {
-    field: 'title',
-    label: 'Agent#'
+    field: 'pageviews',
+    label: 'Area Code'
   },
   {
     field: 'title',
-    label: 'Group'
+    label: 'Delivery Remarks'
   },
   {
     field: 'title',
-    label: 'Stock#'
+    label: 'Billing Address1'
   },
   {
     field: 'title',
-    label: 'Barcode'
+    label: 'Billing Address2'
   },
   {
     field: 'title',
-    label: 'Stock Control'
+    label: 'Billing Address3'
   },
   {
     field: 'title',
-    label: 'Description'
+    label: 'Billing Address4'
   },
   {
     field: 'title',
-    label: 'Stock Name2'
+    label: 'Area'
   },
   {
     field: 'title',
-    label: 'Stock Location'
-  },
-  {
-    field: 'title',
-    label: 'Stock Control'
-  },
-  {
-    field: 'title',
-    label: 'Qty'
-  },
-  {
-    field: 'title',
-    label: 'UOM'
-  },
-  {
-    field: 'title',
-    label: 'Unit Price'
-  },
-  {
-    field: 'title',
-    label: 'Amount'
+    label: 'Area Name'
   }
 ]
 
@@ -122,9 +82,8 @@ getTableList()
 </script>
 
 <template>
-  <ContentWrap :title="'Invoice List - QnE'">
+  <ContentWrap :title="'Customer Data'">
     <Table
-      class="scrollable-table"
       :columns="columns"
       :data="tableDataList"
       :loading="loading"
@@ -132,13 +91,3 @@ getTableList()
     />
   </ContentWrap>
 </template>
-
-<style>
-.scrollable-table {
-  overflow-x: auto;
-}
-
-.scrollable-table th {
-  width: 100px;
-}
-</style>
