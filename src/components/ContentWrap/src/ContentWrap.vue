@@ -9,7 +9,8 @@ const prefixCls = getPrefixCls('content-wrap')
 
 defineProps({
   title: propTypes.string.def(''),
-  message: propTypes.string.def('')
+  message: propTypes.string.def(''),
+  subtitle: propTypes.string.def('')
 })
 </script>
 
@@ -24,8 +25,10 @@ defineProps({
           </template>
           <Icon class="ml-5px" icon="vi-bi:question-circle-fill" :size="14" />
         </ElTooltip>
-        <div class="flex pl-20px flex-grow">
-          <slot name="header"></slot>
+        <div class="flex pl-20px flex-grow subtitle-right">
+          <slot name="header">
+            <span class="text-13px font-700">{{ subtitle }}</span>
+          </slot>
         </div>
       </div>
     </template>
@@ -34,3 +37,13 @@ defineProps({
     </div>
   </ElCard>
 </template>
+
+<style>
+.subtitle-right {
+  justify-content: end;
+}
+
+.el-table .cell.el-tooltip {
+  white-space: wrap;
+}
+</style>

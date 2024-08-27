@@ -13,7 +13,8 @@ interface Params {
 
 const columns: TableColumn[] = [
   {
-    field: 'pageviews',
+    field: 'index',
+    type: 'index',
     label: 'No.'
   },
   {
@@ -66,7 +67,7 @@ getTableList()
 </script>
 
 <template>
-  <ContentWrap :title="'Cash Account'">
+  <ContentWrap :title="'Cash Account'" :subtitle="'Total: 80 customers'">
     <Table
       :columns="columns"
       :data="tableDataList"
@@ -75,3 +76,25 @@ getTableList()
     />
   </ContentWrap>
 </template>
+
+<style>
+/* table {
+  table-layout: auto !important;
+}
+
+colgroup col:nth-child(1) {
+  width: 70px;
+}
+
+.el-table__row td:nth-child(1) .cell {
+  width: 70px !important;
+}
+
+.el-table__header th:nth-child(1) {
+  width: 70px;
+}
+
+.el-table__header th:nth-child(1) .cell {
+  width: 70px;
+} */
+</style>

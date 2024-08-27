@@ -127,7 +127,23 @@ const actionFn = (data: any) => {
   overflow-x: auto;
 }
 
-.scrollable-table tr th {
+/* .scrollable-table tr th {
   width: 300px;
+} */
+
+/* colgroup col:nth-child(1) {
+  width: 70px;
 }
+
+.el-table__row td:nth-child(1) .cell {
+  width: 70px !important;
+}
+
+.el-table__header th:nth-child(1) {
+  width: 70px;
+}
+
+.el-table__header th:nth-child(1) .cell {
+  width: 70px;
+} */
 </style>
