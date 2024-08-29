@@ -37,7 +37,7 @@ const onExpand = () => {
     :icon="useIcon({ icon: 'vi-ep:search' })"
     @click="onSearch"
   >
-    {{ t('common.query') }}
+    {{ t('common.search') }}
   </BaseButton>
   <BaseButton
     v-if="showReset"

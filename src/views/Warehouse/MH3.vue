@@ -1,70 +1,63 @@
 <script setup lang="tsx">
 import { ContentWrap } from '@/components/ContentWrap'
-// import { useI18n } from '@/hooks/web/useI18n'
-// import { ElTag } from 'element-plus'
+import { useI18n } from '@/hooks/web/useI18n'
 import { Table, TableColumn } from '@/components/Table'
 import { getTableListApi } from '@/api/table'
 import { TableData } from '@/api/table/types'
 import { ref } from 'vue'
-
-// const { t } = useI18n()
+// import { ElTag } from 'element-plus'
+import { BaseButton } from '@/components/Button'
 
 interface Params {
   pageIndex?: number
   pageSize?: number
 }
 
+const { t } = useI18n()
+
 const columns: TableColumn[] = [
   {
-    field: 'index',
-    label: 'No.',
-    type: 'index'
-  },
-  {
-    field: 'title',
-    label: 'Acc'
+    field: 'pageviews',
+    label: 'No.'
   },
   {
     field: 'author',
-    label: 'Customer Name'
+    label: 'Day'
   },
   {
-    field: 'pageviews',
+    field: 'title',
+    label: 'Area Name',
+    sortable: true
+  },
+  {
+    field: 'title',
     label: 'Area Code'
   },
   {
     field: 'title',
-    label: 'Delivery Remarks'
+    label: 'Customer Code'
   },
   {
-    field: 'content',
-    label: 'Billing Address',
-    children: [
-      {
-        field: 'title',
-        label: 'Address 1'
-      },
-      {
-        field: 'title',
-        label: 'Address 2'
-      },
-      {
-        field: 'title',
-        label: 'Address 3'
-      },
-      {
-        field: 'title',
-        label: 'Address 4'
+    field: 'display_time',
+    label: 'Time'
+  },
+  {
+    field: 'title',
+    label: 'Customer Name'
+  },
+
+  {
+    field: 'action',
+    label: t('tableDemo.action'),
+    slots: {
+      default: (data) => {
+        return (
+          <BaseButton type="primary" onClick={() => actionFn(data)}>
+            Edit
+          </BaseButton>
+        )
       }
-    ]
-  },
-  {
-    field: 'title',
-    label: 'Area'
-  },
-  {
-    field: 'title',
-    label: 'Area Name'
+    }
   }
 ]
 
@@ -89,10 +82,14 @@ const getTableList = async (params?: Params) => {
 }
 
 getTableList()
+
+const actionFn = (data: any) => {
+  console.log(data)
+}
 </script>
 
 <template>
-  <ContentWrap :title="'Customer Data'" :subtitle="'Total: 80 customers'">
+  <ContentWrap :title="'Warehouse Conditional Schedule List'">
     <Table
       :columns="columns"
       :data="tableDataList"
@@ -101,8 +98,3 @@ getTableList()
     />
   </ContentWrap>
 </template>
-<style>
-th[colspan='4'] .cell {
-  text-align: center;
-}
-</style>

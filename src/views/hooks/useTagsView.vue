@@ -8,9 +8,14 @@ const { push } = useRouter()
 const { closeAll, closeLeft, closeRight, closeOther, closeCurrent, refreshPage, setTitle } =
   useTagsView()
 
+// const closeAllTabs = () => {
+//   closeAll(() => {
+//     push('/dashboard/analysis')
+//   })
+// }
 const closeAllTabs = () => {
   closeAll(() => {
-    push('/dashboard/analysis')
+    push('/dashboard/index')
   })
 }
 
@@ -30,9 +35,14 @@ const refresh = () => {
   refreshPage()
 }
 
+// const closeCurrentTab = () => {
+//   closeCurrent(undefined, () => {
+//     push('/dashboard/analysis')
+//   })
+// }
 const closeCurrentTab = () => {
   closeCurrent(undefined, () => {
-    push('/dashboard/analysis')
+    push('/dashboard/index')
   })
 }
 

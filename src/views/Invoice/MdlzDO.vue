@@ -1,13 +1,10 @@
 <script setup lang="tsx">
 import { ContentWrap } from '@/components/ContentWrap'
 // import { useI18n } from '@/hooks/web/useI18n'
-// import { ElTag } from 'element-plus'
 import { Table, TableColumn } from '@/components/Table'
 import { getTableListApi } from '@/api/table'
 import { TableData } from '@/api/table/types'
 import { ref } from 'vue'
-
-// const { t } = useI18n()
 
 interface Params {
   pageIndex?: number
@@ -16,55 +13,88 @@ interface Params {
 
 const columns: TableColumn[] = [
   {
-    field: 'index',
-    label: 'No.',
-    type: 'index'
+    field: 'pageviews',
+    label: 'No.'
+  },
+  {
+    field: 'display_time',
+    label: 'Date'
   },
   {
     field: 'title',
-    label: 'Acc'
+    label: 'Sales Invoice'
   },
   {
-    field: 'author',
-    label: 'Customer Name'
+    field: 'title',
+    label: 'Delivery Term'
   },
   {
     field: 'pageviews',
-    label: 'Area Code'
+    label: 'Our DO No'
   },
   {
     field: 'title',
-    label: 'Delivery Remarks'
-  },
-  {
-    field: 'content',
-    label: 'Billing Address',
-    children: [
-      {
-        field: 'title',
-        label: 'Address 1'
-      },
-      {
-        field: 'title',
-        label: 'Address 2'
-      },
-      {
-        field: 'title',
-        label: 'Address 3'
-      },
-      {
-        field: 'title',
-        label: 'Address 4'
-      }
-    ]
+    label: 'Ref. No'
   },
   {
     field: 'title',
-    label: 'Area'
+    label: 'Customer'
   },
   {
     field: 'title',
-    label: 'Area Name'
+    label: 'Customer Name'
+  },
+  {
+    field: 'title',
+    label: 'Agent#'
+  },
+  {
+    field: 'title',
+    label: 'Group'
+  },
+  {
+    field: 'title',
+    label: 'Stock#'
+  },
+  {
+    field: 'title',
+    label: 'Barcode'
+  },
+  {
+    field: 'title',
+    label: 'Stock Control'
+  },
+  {
+    field: 'title',
+    label: 'Description'
+  },
+  {
+    field: 'title',
+    label: 'Stock Name2'
+  },
+  {
+    field: 'title',
+    label: 'Stock Location'
+  },
+  {
+    field: 'title',
+    label: 'Stock Control'
+  },
+  {
+    field: 'title',
+    label: 'Qty'
+  },
+  {
+    field: 'title',
+    label: 'UOM'
+  },
+  {
+    field: 'title',
+    label: 'Unit Price'
+  },
+  {
+    field: 'title',
+    label: 'Amount'
   }
 ]
 
@@ -92,8 +122,9 @@ getTableList()
 </script>
 
 <template>
-  <ContentWrap :title="'Customer Data'" :subtitle="'Total: 80 customers'">
+  <ContentWrap :title="'Invoice List - QnE'">
     <Table
+      class="scrollable-table"
       :columns="columns"
       :data="tableDataList"
       :loading="loading"
@@ -101,8 +132,13 @@ getTableList()
     />
   </ContentWrap>
 </template>
+
 <style>
-th[colspan='4'] .cell {
-  text-align: center;
+.scrollable-table {
+  overflow-x: auto;
+}
+
+.scrollable-table th {
+  width: 100px;
 }
 </style>

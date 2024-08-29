@@ -49,7 +49,8 @@ export default {
     notSpace: '不能包含空格',
     notSpecialCharacters: '不能包含特殊字符',
     isEqual: '两次输入不一致',
-    setting: '设置'
+    setting: '设置',
+    search: '搜寻'
   },
   lock: {
     lockScreen: '锁定屏幕',
@@ -188,7 +189,19 @@ export default {
     personalCenter: '个人中心',
     personal: '个人',
     avatars: '头像列表',
-    iAgree: '我同意'
+    iAgree: '我同意',
+    users: '用户',
+    userAccList: '用户帐号列表',
+    userManagement: '用户帐号管理',
+    settings: '设置',
+    newPage: '新增页面',
+    route: '路线',
+    truckLoading: '卡车载送',
+    deliveryStatus: '运送状况',
+    warehouse: '货仓',
+    invoice: '账单',
+    invoiceSummary: '账单总结',
+    truck: '货车'
   },
   permission: {
     hasPermission: '请设置操作权限值'

@@ -50,7 +50,8 @@ export default {
     notSpecialCharacters: 'Special characters are not allowed',
     isEqual: 'The two are not equal',
     // 列设置
-    setting: 'Setting'
+    setting: 'Setting',
+    search: 'Search'
   },
   lock: {
     lockScreen: 'Lock screen',
@@ -176,7 +177,7 @@ export default {
     treeTable: 'Tree table',
     PicturePreview: 'Table Image Preview',
     department: 'MHC',
-    menuManagement: 'Menu management',
+    menuManagement: 'MH3',
     // 权限测试页面
     permission: 'Permission test page',
     function: 'New Page',
@@ -193,7 +194,19 @@ export default {
     personalCenter: 'Personal center',
     personal: 'Personal',
     avatars: 'Avatars',
-    iAgree: 'I agree'
+    iAgree: 'I agree',
+    users: 'Users',
+    userAccList: 'User Acc List',
+    userManagement: 'User Management',
+    settings: 'Settings',
+    newPage: 'New Page',
+    route: 'Route',
+    truckLoading: 'Truck Loading',
+    deliveryStatus: 'Delivery Status',
+    warehouse: 'Warehouse',
+    invoice: 'Invoice',
+    invoiceSummary: 'Invoice Summary',
+    truck: 'Truck'
   },
   permission: {
     hasPermission: 'Please set the operation permission value'

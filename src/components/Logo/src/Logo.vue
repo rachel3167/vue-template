@@ -11,20 +11,11 @@ const appStore = useAppStore()
 
 const show = ref(true)
 
-// const title = computed(() => appStore.getTitle)
+const title = computed(() => appStore.getTitle)
 
 const layout = computed(() => appStore.getLayout)
 
 const collapse = computed(() => appStore.getCollapse)
-
-const routerLinkClasses = computed(() => {
-  return [
-    prefixCls,
-    layout.value !== 'classic' ? `${prefixCls}__Top` : '',
-    'flex !h-[var(--logo-height)] items-center cursor-pointer relative decoration-none overflow-hidden',
-    collapse.value ? 'collapsed' : 'expanded'
-  ]
-})
 
 onMounted(() => {
   if (unref(collapse)) show.value = false
@@ -59,36 +50,31 @@ watch(
 
 <template>
   <div>
-    <router-link :class="routerLinkClasses" to="/">
+    <router-link
+      :class="[
+        prefixCls,
+        layout !== 'classic' ? `${prefixCls}__Top` : '',
+        'flex !h-[var(--logo-height)] items-center cursor-pointer pl-8px relative decoration-none overflow-hidden'
+      ]"
+      to="/"
+    >
       <img
         src="@/assets/imgs/logo.png"
-        class="w-[calc(var(--logo-width)-10px)] h-[calc(var(--logo-height)-10px)] ml-15px mt-2px"
+        class="w-[calc(var(--logo-height)-10px)] h-[calc(var(--logo-height)-10px)]"
       />
-      <!-- <div
-		v-if="show"
-		:class="[
-		'ml-10px text-16px font-700',
-		{
-			'text-[var(--logo-title-text-color)]': layout === 'classic',
-			'text-[var(--top-header-text-color)]':
-			layout === 'topLeft' || layout === 'top' || layout === 'cutMenu'
-		}
-		]"
-	>
-		{{ title }}
-	</div> -->
+      <div
+        v-if="show"
+        :class="[
+          'ml-10px text-15px font-700',
+          {
+            'text-[var(--logo-title-text-color)]': layout === 'classic',
+            'text-[var(--top-header-text-color)]':
+              layout === 'topLeft' || layout === 'top' || layout === 'cutMenu'
+          }
+        ]"
+      >
+        {{ title }}
+      </div>
     </router-link>
   </div>
 </template>
-
-<style scoped>
-.collapsed {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-.expanded {
-  padding-left: 10px;
-  margin-left: 0;
-}
-</style>
