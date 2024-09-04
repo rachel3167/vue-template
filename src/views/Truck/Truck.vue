@@ -114,6 +114,10 @@ const actionFn = (data: any) => {
   <ContentWrap :title="'Truck List'">
     <div class="table-function-container">
       <div class="table-function-left">
+        <div class="date-picker-box">
+          <label for="date-picker">Date:</label>
+          <input type="date" id="date-picker" />
+        </div>
         <div class="search-input-box">
           <input type="text" placeholder="Search..." />
           <span class="search-icon-box">
@@ -191,6 +195,50 @@ const actionFn = (data: any) => {
   justify-content: start;
   align-items: center;
   gap: 10px;
+}
+
+.date-picker-box {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 35px;
+  max-width: 210px;
+  padding: 0 10px;
+  cursor: pointer; /* This makes the entire box clickable */
+  background-color: #fff;
+  border: 1px solid rgb(217 217 217);
+  border-radius: 6px;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  align-items: center;
+}
+
+.date-picker-box label {
+  margin-right: 5px;
+  font-family: Nunito;
+  font-size: 14px;
+  font-weight: 400;
+  color: grey;
+  cursor: pointer; /* Ensures the label also triggers the date picker */
+}
+
+.date-picker-box input {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  padding-left: 5px;
+  font-family: Nunito;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  cursor: pointer; /* Makes the input field clickable */
+  background-color: #fff;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  cursor: pointer; /* Ensures the calendar icon, if displayed, has a pointer cursor */
 }
 
 .search-input-box {
